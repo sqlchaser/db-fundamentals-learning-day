@@ -3,6 +3,7 @@
 # MAGIC # Learning Day Notebook #
 # MAGIC
 # MAGIC Code is easy to notate when you can leverage Markdown!
+# MAGIC
 # MAGIC Simple Notebook that will install the mlops-end2end Demo in your Databricks Workspace
 
 # COMMAND ----------
@@ -25,7 +26,8 @@ dbdemos.list_demos()
 
 # DBTITLE 1,Install mlops-end2end
 import dbdemos
-dbdemos.install('mlops-end2end')
+#dbdemos.install('mlops-end2end')
+dbdemos.install(demo_name='mlops-end2end', catalog = 'charter', schema = 'demo_mlops_end2end')
 
 # COMMAND ----------
 
